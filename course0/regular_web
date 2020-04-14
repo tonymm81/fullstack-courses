@@ -1,0 +1,23 @@
+https://www.websequencediagrams.com/cgi-bin/cdraw?lz=dGl0bGUgc2VrdmVuc3Npa2FhdmlvCgpodG1sLT5zZXJ2ZXI6IEdFVCBSZXF1ZXN0IFVSTDogaHR0cHM6Ly9mdWxsc3RhY2stZXhhbXBsZWFwcC5oZXJva3VhcHAuY29tL25vdGVzCgBEBi0-aHRtbDogUmVzcG9uc2UgYmFjayB0byBodG1sAClLbWFpbi5jcwBnEHIAE2RqcwoAgV8PYnJvd3NlciBzdGFydHMgdG8gcnVuIGpzIGZpbGUgdG8gYXNrIACCZQYgb3BlbiBqc29uIGRhdGFiYXNlAIJ8D3VzZXIgcHVzaCB0aGUgYnV0dG9uOiBQT1MAgmc7ZXdfbm90ZQoAgytMAIE2gU0Ag0IQAIQ7DndpdGggdXBkYXRlAIM1BgCDUwV3aGF0IGluY2x1ZGVzAIMyBXMgdGV4dACGVAcAhA0OADgGcwCDTwV2aWV3IHRvAINlBQoK&s=default
+
+title sekvenssikaavio
+
+html->server: GET Request URL: https://fullstack-exampleapp.herokuapp.com/notes
+server->html: Response back to html
+html->server: GET Request URL: https://fullstack-exampleapp.herokuapp.com/main.css
+server->html: response back to html
+html->server: GET Request URL: https://fullstack-exampleapp.herokuapp.com/main.js
+
+server->html: browser starts to run js file to ask server open json database
+html->server: user push the button: POST Request URL: https://fullstack-exampleapp.herokuapp.com/new_note
+
+
+html->server: GET Request URL: https://fullstack-exampleapp.herokuapp.com/main.css
+server->html: response back to html
+html->server: GET Request URL: https://fullstack-exampleapp.herokuapp.com/main.js
+
+server->html: browser starts to run js file to ask server open json database
+
+
+server->html: response back with update json file what includes users text
+html->html: browser updates the view to user
