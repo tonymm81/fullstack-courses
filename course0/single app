@@ -1,0 +1,20 @@
+https://www.websequencediagrams.com/cgi-bin/cdraw?lz=dGl0bGUgc2luZ2xlIGFwcCBzZWt2ZW5zc2lrYWF2aW8KCmh0bWwtPnNlcnZlcjogR0VUIGh0dHBzOi8vZnVsbHN0YWNrLWV4YW1wbGVhcHAuaGVyb2t1YXBwLmNvbS9zcGEKADUGLT5odG1sOiAAQwYgcmVzcG9uc2UgdG8gaHRtbABUFFJlcXVlc3QgVVJMOgBJLG1haW4uY3NzAFsfYmFjawArVHNwYS5qAG0QYnJvd3NlciBzdGFydHMgdG8gcnVuIGpzIGZpbGUgYW5kIGFzAIEJBW9wZW4ganNvbgAQCgA0CHJlbmRlcnMAEwt3aXRoIERPTSBhcGkAglkPAIIFPGRhdGEuanNvbgCDbhB1c2VyIHB1c2ggYSBhZGQgbm90ZSBidXR0b24sAIFABXRoaXMgaXMgdmVyeSBkaWZmZXJlbnQgaW4AhFgLAIRDDwAuBQCEdgtkb2Vuc3QgbWFrZSA1IGxvYWRpbmcgcgCEBQcsIG9ubHkgb25lAIUKD1BPUwCDeDpuZXdfbm90ZV9zcGEKAIMjF3VwZGF0ZXMgdGhlIG5ldwCBdgZ0bwCDFRdzaG93AIMjBwCDGA0KCg&s=default
+
+
+title single app sekvenssikaavio
+
+html->server: GET https://fullstack-exampleapp.herokuapp.com/spa
+server->html: server response to html
+
+html->server: GET Request URL: https://fullstack-exampleapp.herokuapp.com/main.css
+server->html: server response back to html
+
+html->server: GET Request URL: https://fullstack-exampleapp.herokuapp.com/spa.js
+server->html: browser starts to run js file and ask to open json file and browser renders json file with DOM api
+server->html: GET Request URL: https://fullstack-exampleapp.herokuapp.com/data.json
+
+html->server: user push a add note button, and this is very different in single app
+html->server: this single app doenst make 5 loading request , only one
+html->server: POST Request URL: https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+server->html: browser updates the new note to json file and browser shows json with DOM api
