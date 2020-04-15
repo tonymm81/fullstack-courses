@@ -1,0 +1,11 @@
+https://www.websequencediagrams.com/cgi-bin/cdraw?lz=dGl0bGUgc2luZ2xlIGFwcAoKaHRtbC0-c2VydmVyOkdFVCBSZXF1ZXN0IFVSTDogaHR0cHM6Ly9mdWxsc3RhY2stZXhhbXBsZWFwcC5oZXJva3VhcHAuY29tL3NwYQoAQQYtPmh0bWw6IABPBiByZXNwb25zZWUgdG8gaHRtbABmDiAAOTxtYWluLmNzcwBcHiBiYWNrACtTc3BhLmpzCgpub3RlIHJpZ2h0IG9mIE5vdGU6AIFkBSBzdGFydHMgdG8gcnVuIGpzIGZpbGUgYW5kIGFzayBhbHNvIGpzb24AEQZmcm9tAIIsCGFuZCBzaG93IGl0IHdpdGggRE9NIGFwaQoKCg&s=default
+
+title single app
+
+html->server:GET Request URL: https://fullstack-exampleapp.herokuapp.com/spa
+server->html: server responsee to html
+html->server: GET Request URL: https://fullstack-exampleapp.herokuapp.com/main.css
+server->html: server response back to html
+html->server: GET Request URL: https://fullstack-exampleapp.herokuapp.com/spa.js
+
+note right of Note: html starts to run js file and ask also json file from server and show it with DOM api
